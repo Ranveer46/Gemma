@@ -322,13 +322,12 @@ def get_system_info() -> Dict[str, Any]:
         System information dictionary
     """
     import platform
-    import psutil
     
     return {
         "platform": platform.system(),
         "platform_version": platform.version(),
         "python_version": platform.python_version(),
-        "cpu_count": psutil.cpu_count(),
-        "memory_total": f"{psutil.virtual_memory().total / (1024**3):.1f} GB",
-        "memory_available": f"{psutil.virtual_memory().available / (1024**3):.1f} GB"
+        "cpu_count": "N/A",
+        "memory_total": "N/A",
+        "memory_available": "N/A"
     } 
