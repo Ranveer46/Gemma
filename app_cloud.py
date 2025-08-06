@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import tempfile
 from typing import Optional
+import requests
 import json
 
 # Import our custom modules
